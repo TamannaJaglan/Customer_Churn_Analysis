@@ -106,32 +106,7 @@ X = data.drop("Churn_Yes", axis=1)
 y = data["Churn_Yes"]
 ```
 
-# 9. Train-Test Split
-```
-X_train, X_test, y_train, y_test = train_test_split(
-    X,
-    y,
-    test_size=0.2,
-    random_state=42
-)
-```
-
-# 10. Scale Data
-```
-scaler = StandardScaler()
-
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
-```
-
-# 11. Train Model
-```
-model = LogisticRegression()
-
-model.fit(X_train, y_train)
-```
-
-# 14. Final Business Insights
+# 9. Final Business Insights
 ```
 print("\nBusiness Insights:")
 print("1. Month-to-month contract customers have higher churn.")
@@ -139,4 +114,34 @@ print("2. Customers with shorter tenure are more likely to churn.")
 print("3. Higher monthly charges are associated with higher churn.")
 print("4. Businesses can target high-risk customers with retention offers.")
 ```
+
+## About the Project
+
+This project analyzes customer churn using Python and identifies the factors that influence customers to leave a company.
+
+## Tools Used
+
+* Python
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+## Analysis Performed
+
+* Data cleaning
+* Churn percentage analysis
+* Churn by contract type
+* Tenure analysis
+* Monthly charges analysis
+* Data visualization
+* Customer churn prediction using Logistic Regression
+
+## Key Insights
+
+* Month-to-month customers have higher churn.
+* Customers with shorter tenure are more likely to leave.
+* Higher monthly charges are associated with increased churn.
+* Churn prediction can help businesses target customers who may leave.
+
 Thank You
