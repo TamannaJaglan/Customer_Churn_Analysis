@@ -1,9 +1,9 @@
 # Customer_Churn_Analysis
 
-```python
+python
 # Customer Churn Analysis using Python
 
-import pandas as pd
+```import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -142,4 +142,5 @@ print("1. Month-to-month contract customers have higher churn.")
 print("2. Customers with shorter tenure are more likely to churn.")
 print("3. Higher monthly charges are associated with higher churn.")
 print("4. Businesses can target high-risk customers with retention offers.")
-```
+
+Thank You
