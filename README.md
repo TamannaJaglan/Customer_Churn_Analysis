@@ -1,9 +1,7 @@
-# Customer_Churn_Analysis
-
-python
 # Customer Churn Analysis using Python
 
-```import pandas as pd
+```
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -11,9 +9,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
-
+```
 
 # 1. Load Dataset
+```
 df = pd.read_csv("Customer Churn.csv")
 
 print("First 5 rows:")
@@ -21,7 +20,7 @@ print(df.head())
 
 print("\nDataset Shape:")
 print(df.shape)
-
+```
 
 # 2. Data Cleaning
 df["TotalCharges"] = pd.to_numeric(
